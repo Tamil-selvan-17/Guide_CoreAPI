@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Error Alert</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Top Banner */
+        .top-banner {
+            background-color: #d9534f;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+        }
+
+        /* Container */
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #d9534f;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #d9534f;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        /* Footer Banner */
+        .footer-banner {
+            background-color: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            border-radius: 0 0 8px 8px;
+            margin-top: 20px;
+        }
+
+        .footer-banner a {
+            color: #d9534f;
+            text-decoration: none;
+        }
+
+        .footer-banner a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #d9534f;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background-color: #c9302c;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-banner">
+        🚨 System Error Notification
+    </div>
+    <div class="container">
+        <h2>Error Details</h2>
+        <p><strong>📦 Module:</strong> {{Module}}</p>
+        <p><strong>🔧 Function:</strong> {{Function}}</p>
+        <p><strong>📌 Action:</strong> {{Action}}</p>
+
+        <h3>Error Details:</h3>
+        <p>{{ErrorDetails}}</p>
+
+        <hr/>
+
+        <p>If this issue persists, please contact our support team immediately.</p>
+        <a href="mailto:support@example.com" class="button">Contact Support</a>
+    </div>
+    <div class="footer-banner">
+        <p>This is an automated message. Please do not reply.</p>
+        <p>&copy; {{Year}} Your Company Name. All rights reserved.</p>
+        <p><a href="https://www.example.com">Visit our website</a> for more information.</p>
+    </div>
+</body>
+</html>
